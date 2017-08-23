@@ -21,7 +21,7 @@ function respond() {
 function postMessage1(variable) {
   var botResponse, options, body, botReq;
   
-    var str = "Hello world, welcome to the universe.";
+    var str = variable;
     var n = str.indexOf(" ");
     
     var indices = [];
