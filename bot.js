@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var x = Math.floor((Math.random() * 7) + 1);
 	
-  if(request.name != "Ol' Floppy") {
+  if(request.name != "B Bot") {
   
   if(request.text) {
     this.res.writeHead(200);
