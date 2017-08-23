@@ -15,6 +15,7 @@ function respond() {
     this.res.end();
   }
 }
+}
 
 //==========================================================================================
 
@@ -32,7 +33,7 @@ function postMessage1(variable) {
     var newstring = [];
     //var B = '\u1F171'
     
-    for(var j=0; j<str.length;j++) {
+    for (var j=0; j<str.length;j++) {
 
 	if(j==0) {
     newstring[j] = "B";
