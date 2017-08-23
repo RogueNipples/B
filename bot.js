@@ -21,22 +21,34 @@ function respond() {
 function postMessage1(variable) {
   var botResponse, options, body, botReq;
   
-  var newstring = [];
-var i;
-for (i = 10; i < str.length; i++) { 
-if (str.substr(i,1) == "a")
-   {
-      newstring[i] = "oodle";
-   }
-   else
-   {
-      newstring[i] = str.substr(i,1);
-   }
-}
-
-var finalstring = (newstring.toString()).replace(/,/g, '');
+    var str = "Hello world, welcome to the universe.";
+    var n = str.indexOf(" ");
     
-    var finalstring = substring.concat("er? I barely know her!")
+    var indices = [];
+    for(var i=0; i<str.length;i++) {
+        if (str[i] === " ") indices.push(i+1);
+    }
+    
+    var newstring = [];
+    
+    
+    for(var j=0; j<str.length;j++) {
+	var B = '\u1F171'
+
+	if(j==0) {
+    newstring[j] = B;
+    }
+    else if(indices.indexOf(j) == -1) {
+        newstring[j] = str.substr(j,1);
+    }
+    else
+    {
+        newstring[j] = B;
+    }
+
+    }
+    
+    var finalstring = (newstring.toString()).replace(/,/g, '');
 	
         botResponse = finalstring;
 
