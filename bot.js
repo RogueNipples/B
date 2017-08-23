@@ -30,10 +30,9 @@ function postMessage1(variable) {
     }
     
     var newstring = [];
-    
+    //var B = '\u1F171'
     
     for(var j=0; j<str.length;j++) {
-	var B = '\u1F171'
 
 	if(j==0) {
     newstring[j] = "B";
