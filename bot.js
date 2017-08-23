@@ -36,14 +36,14 @@ function postMessage1(variable) {
     for (var j=0; j<str.length;j++) {
 
 	if(j==0) {
-    newstring[j] = B;
+    newstring[j] = 🅱️;
     }
     else if(indices.indexOf(j) == -1) {
         newstring[j] = str.substr(j,1);
     }
     else
     {
-        newstring[j] = B;
+        newstring[j] = 🅱️;
     }
 
     }
