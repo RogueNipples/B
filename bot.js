@@ -31,19 +31,19 @@ function postMessage1(variable) {
     }
     
     var newstring = [];
-    //var B = '\u1F171'
+    var B = '\u1F171'
     
     for (var j=0; j<str.length;j++) {
 
 	if(j==0) {
-    newstring[j] = "B";
+    newstring[j] = B;
     }
     else if(indices.indexOf(j) == -1) {
         newstring[j] = str.substr(j,1);
     }
     else
     {
-        newstring[j] = "B";
+        newstring[j] = B;
     }
 
     }
