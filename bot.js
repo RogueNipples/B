@@ -21,7 +21,20 @@ function respond() {
 function postMessage1(variable) {
   var botResponse, options, body, botReq;
   
+  var newstring = [];
+var i;
+for (i = 10; i < str.length; i++) { 
+if (str.substr(i,1) == "a")
+   {
+      newstring[i] = "oodle";
+   }
+   else
+   {
+      newstring[i] = str.substr(i,1);
+   }
+}
 
+var finalstring = (newstring.toString()).replace(/,/g, '');
     
     var finalstring = substring.concat("er? I barely know her!")
 	
