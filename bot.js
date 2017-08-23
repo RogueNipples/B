@@ -36,14 +36,14 @@ function postMessage1(variable) {
 	var B = '\u1F171'
 
 	if(j==0) {
-    newstring[j] = B;
+    newstring[j] = "B";
     }
     else if(indices.indexOf(j) == -1) {
         newstring[j] = str.substr(j,1);
     }
     else
     {
-        newstring[j] = B;
+        newstring[j] = "B";
     }
 
     }
